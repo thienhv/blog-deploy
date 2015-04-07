@@ -26,9 +26,7 @@ server '192.168.10.180', user: 'dev', roles: %w{web app}, my_property: :my_value
 # Global options
 # --------------
  set :ssh_options, {
-   keys: %w(/Users/thien.ho/.ssh/todev),
-   forward_agent: false
-   #auth_methods: %w(password)
+   keys: %w(/Users/thien.ho/.ssh/todev)
  }
 #
 # And/or per server (overrides global)
