@@ -25,9 +25,9 @@ server '192.168.10.180', user: 'dev', roles: %w{web app}, my_property: :my_value
 #
 # Global options
 # --------------
- set :ssh_options, {
-   keys: %w(/Users/thien.ho/.ssh/todev)
- }
+set :ssh_options, {
+  keys: %w(/Users/thien.ho/.ssh/todev)
+}
 #
 # And/or per server (overrides global)
 # ------------------------------------
@@ -41,3 +41,10 @@ server '192.168.10.180', user: 'dev', roles: %w{web app}, my_property: :my_value
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
+
+
+set :nginx_server_name, 'mydomain.com'
+# ignore this if you do not need SSL
+#set :nginx_use_ssl, true
+#set :nginx_ssl_cert_local_path, '/path/to/ssl_cert.crt'
+#set :nginx_ssl_cert_key_local_path, '/path/to/ssl_cert.key'
