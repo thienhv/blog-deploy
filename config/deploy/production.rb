@@ -48,3 +48,10 @@ set :nginx_server_name, 'mydomain.com'
 #set :nginx_use_ssl, true
 #set :nginx_ssl_cert_local_path, '/path/to/ssl_cert.crt'
 #set :nginx_ssl_cert_key_local_path, '/path/to/ssl_cert.key'
+
+desc "Setup ===================================>"
+task :setup do
+  on roles(:all) do |host|
+    puts 'hello setup'
+  end
+end
