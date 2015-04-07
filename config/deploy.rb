@@ -13,6 +13,8 @@ set :server_name, "192.168.10.180"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/dev/my_app_name'
 
+set :branch, 'master'
+
 # Default value for :scm is :git
 # set :scm, :git
 
