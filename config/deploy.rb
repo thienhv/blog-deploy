@@ -39,6 +39,9 @@ set :log_level, :debug
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+
+set :branch, tag if exists?(:tag)
+
 namespace :deploy do
 
   after :restart, :clear_cache do
