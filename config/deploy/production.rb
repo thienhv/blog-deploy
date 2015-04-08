@@ -44,6 +44,7 @@ set :ssh_options, {
 
 
 set :nginx_server_name, 'amydomain.com'
+
 # ignore this if you do not need SSL
 #set :nginx_use_ssl, true
 #set :nginx_ssl_cert_local_path, '/path/to/ssl_cert.crt'
