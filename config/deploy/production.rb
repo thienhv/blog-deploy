@@ -31,7 +31,8 @@ server ipaddress, user: user, roles: %w{web app}, my_property: :my_value
 # Global options
 # --------------
 set :ssh_options, {
-  keys: %w(/Users/thien.ho/.ssh/todev)
+  keys: %w(/Users/thien.ho/.ssh/todev),
+  forward_agent: true,
 }
 #
 # And/or per server (overrides global)
