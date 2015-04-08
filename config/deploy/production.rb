@@ -20,7 +20,7 @@ role :db,  ["#{user}@#{ipaddress}"]
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server ipaddress, user: 'dev', roles: %w{web app}, my_property: :my_value
+server ipaddress, user: user, roles: %w{web app}, my_property: :my_value
 
 
 # Custom SSH Options
