@@ -3,7 +3,6 @@ require 'capistrano/setup'
 
 # Include default deployment tasks
 require 'capistrano/deploy'
-require 'capistrano/ssh_doctor'
 
 # Include tasks from other gems included in your Gemfile
 #

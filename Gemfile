@@ -47,6 +47,5 @@ gem 'capistrano-bundler'
 
 gem 'capistrano'
 gem 'capistrano-unicorn-nginx', '~> 3.2.0'
-gem 'capistrano-ssh-doctor'
 gem 'unicorn'
 gem 'capistrano-rvm'
