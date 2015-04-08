@@ -40,8 +40,6 @@ set :log_level, :debug
 # set :keep_releases, 5
 
 
-set :branch, tag if exists?(:tag)
-
 namespace :deploy do
 
   after :restart, :clear_cache do
