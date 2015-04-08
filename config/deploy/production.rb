@@ -22,6 +22,7 @@ role :db,  ["#{user}@#{ipaddress}"]
 
 server ipaddress, user: user, roles: %w{web app}, my_property: :my_value
 
+set :bundle_flags, "--deployment"
 
 # Custom SSH Options
 # ==================
