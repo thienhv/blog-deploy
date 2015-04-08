@@ -5,7 +5,7 @@ set :application, 'my_app_name'
 set :repo_url, 'https://github.com/thienhv/blog-deploy.git'
 set :deploy_user, 'dev'
 
-set :server_name, "192.168.10.180"
+#set :server_name, "192.168.10.180"
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
