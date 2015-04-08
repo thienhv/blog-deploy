@@ -40,6 +40,8 @@ set :log_level, :debug
 # set :keep_releases, 5
 
 
+set :branch, "deploy"
+
 namespace :deploy do
 
   after :restart, :clear_cache do
